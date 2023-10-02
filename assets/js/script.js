@@ -11,8 +11,13 @@ function renderTareas (){
         html+= `<tr> 
         <td>${tarea.id}</td>
         <td>${tarea.nombreTarea}</td>
-        <td><input type="checkbox" id="checkbox" name="checkbox"></td>
-        </>`
+        <td>
+        <td>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <i class="fas fa-square-xmark" style="color: #d71919;" onclick="borrarTareas(${tarea.id})"></i>
+    </td>
+    
+    </>`
     }
     bodyTable.innerHTML= html;
 }
@@ -22,4 +27,9 @@ btnAgregar.addEventListener("click", ()=>{
     inputTareas.value="";
     renderTareas();
 })
- 
+function borrarTareas(id){
+    const  index = tareas.findIndex((ele)=> ele.id ===id);
+   tareas.splice(index,1);
+   renderTareas();
+}
+
