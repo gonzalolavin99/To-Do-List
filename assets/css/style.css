@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.buscador {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.buscador p {
+    font-weight: bold;
+}
+
+.buscador input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; 
+    max-width: 300px;
+    margin-right: 10px;
+    margin-left: 0; 
+}
+
+.buscador button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.buscador button:hover {
+    background-color: #0056b3;
+}
+
+.seccionTareas {
+    text-align: center;
+}
+
+#tablaDeTareas {
+    border-collapse: collapse;
+    width: 100%;  
+    max-width: 600px;
+    margin-top: 20px;
+    margin-left: 0; 
+}
+
+#tablaDeTareas th, #tablaDeTareas td {
+    border: 1px solid #ddd;
+    padding: 10px; 
+    text-align: left;
+}
+
+#tablaDeTareas th {
+    background-color: #f2f2f2;
+}
+
+#tablaDeTareas tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#tablaDeTareas tr:hover {
+    background-color: #ddd;
+}
+
+#tareasRealizadas {
+    background-color: #4CAF50;
+    width: 100%; /* Ancho del 100% para llenar la pantalla */
+}
+
+#cuenta-tareas {
+    margin-right: 0; 
+    margin-left: 0;
+}
